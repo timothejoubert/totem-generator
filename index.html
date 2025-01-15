@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+<!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/common.css">
+    <link rel="stylesheet" href="src/css/user-panel.css">
+    <link rel="stylesheet" href="src/css/totem.css">
+    <title>TOTEM - Manon Hourdou</title>
+  </head>
+  <body>
+    <div id="app">
+      <details class="user-panel">
+        <summary class="user-panel__title">Global controls</summary>
+        <div class="user-panel__body">
+          <div class="user-panel__body__section">
+            <button class="global-shuffle">Shuffle</button>
+            <button class="show-grid">Show grid</button>
+          </div>
+          <div class="user-panel__body__section">
+              <label for="global-totem-color">
+                  <span>SVG color:</span>
+                <input type="color" value="#000" name="global-totem-color" id="global-totem-color">
+              </label>
+              <label for="global-bg-color">
+                Background:
+                <input type="color" value="#ffffff" name="global-bg-color" id="global-bg-color">
+              </label>
+              <label for="global-surface-color">
+                Surface:
+                <input type="color" value="#f3f3f3" name="global-surface-color" id="global-surface-color">
+              </label>
+                <button id="global-reset-color">Reset</button>
+          </div>
+            <div class="user-panel__body__section">
+            <button id="download">Save PNG</button>
+            <button id="download-png">Save transparent PNG</button>
+            </div>
+        </div>
+      </details>
+
+      <main class="totem">
+          <section class="totem-section" data-totem-section="head">
+              <div class="totem-section-content"></div>
+              <div class="totem-section-controls">
+                  <label for="totem-section-head-color">
+                      Color:
+                    <input type="color" value="#000" name="totem-section-head-color" id="totem-section-head-color" data-input-style="color">
+                  </label>
+                  <label for="totem-section-head-bg-color">
+                      Bg:
+                      <input type="color" value="#000" name="totem-section-head-bg-color" id="totem-section-head-bg-color" data-input-style="backgroundColor">
+                  </label>
+                  <button class="reset" data-button-action="reset">Reset</button>
+                  <button class="shuffle" data-button-action="shuffle">Shuffle</button>
+              </div>
+          </section>
+          <section class="totem-section" data-totem-section="body">
+              <div class="totem-section-content"></div>
+              <div class="totem-section-controls">
+                  <label for="totem-section-body-color">
+                      Color:
+                      <input type="color" value="#000" name="totem-section-body-color" id="totem-section-body-color" data-input-style="color">
+                  </label>
+                  <label for="totem-section-body-bg-color">
+                      Bg:
+                      <input type="color" value="#000" name="totem-section-body-bg-color" id="totem-section-body-bg-color" data-input-style="backgroundColor">
+                  </label>
+                    <button class="reset" data-button-action="reset">Reset</button>
+                  <button class="shuffle" data-button-action="shuffle">Shuffle</button>
+              </div>
+          </section>
+          <section class="totem-section" data-totem-section="leg">
+              <div class="totem-section-content"></div>
+              <div class="totem-section-controls">
+                  <label for="totem-section-leg-color">
+                      Color:
+                      <input type="color" value="#000" name="totem-section-leg-color" id="totem-section-leg-color" data-input-style="color">
+                  </label>
+                  <label for="totem-section-leg-bg-color">
+                      Bg:
+                      <input type="color" value="#000" name="totem-section-leg-bg-color" id="totem-section-leg-bg-color" data-input-style="backgroundColor">
+                  </label>
+                    <button class="reset" data-button-action="reset">Reset</button>
+                  <button class="shuffle" data-button-action="shuffle">Shuffle</button>
+              </div>
+          </section>
+          <section class="totem-section" data-totem-section="foot">
+              <div class="totem-section-content"></div>
+              <div class="totem-section-controls">
+                  <label for="totem-section-foot-color">
+                      Color:
+                      <input type="color" value="#000" name="totem-section-foot-color" id="totem-section-foot-color" data-input-style="color">
+                  </label>
+                  <label for="totem-section-foot-bg-color">
+                      Bg:
+                      <input type="color" value="#000" name="totem-section-foot-bg-color" id="totem-section-foot-bg-color" data-input-style="backgroundColor">
+                  </label>
+                    <button class="reset" data-button-action="reset">Reset</button>
+                  <button class="shuffle" data-button-action="shuffle">Shuffle</button>
+              </div>
+          </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.user-panel {
+    border: 1px solid black;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 200px;
+    background-color: white;
+    z-index: 100;
+}
+
+.user-panel__title {
+    padding: 12px 20px;
+    cursor: pointer;
+
+    .user-panel[open] & {
+        border-bottom: 1px solid black;
+    }
+}
+
+
+.user-panel__body {
+    /*padding: 28px 20px;*/
+}
+
+.user-panel__body__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+    padding: 22px 24px;
+    border-top: 1px solid black;
+
+    &:first-child {
+        border-top: none;
+    }
+}
+
+.user-panel__body__section label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-panel button {
+    width: 100%;
+}

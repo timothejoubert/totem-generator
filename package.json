@@ -1,0 +1,20 @@
+{
+  "name": "totem-manon",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/dom-to-image": "^2.6.7",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "dom-to-image-more": "^3.5.0",
+    "file-saver": "^2.0.5"
+  }
+}
