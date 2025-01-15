@@ -54,7 +54,7 @@ function onTotemInputChange(event: Event, totem: TotemElement) {
 
     const inputEl = event.target as HTMLInputElement
     const styleKey = inputEl?.getAttribute('data-input-style') || ''
-    if(styleKey) totem.section.style[styleKey] = inputEl.value
+    if(styleKey) totem.section.style[styleKey as unknown as number] = inputEl.value
 }
 
 

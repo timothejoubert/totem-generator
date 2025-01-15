@@ -1,4 +1,4 @@
-import domtoimage from 'dom-to-image-more';
+import domtoimage from 'dom-to-image';
 import { saveAs } from 'file-saver';
 import { shuffleAllTotemElement, resetColors as resetItemsColors } from "./totem-element.ts";
 
@@ -80,17 +80,18 @@ const downloadIndex = {
 }
 
 function download(removeBg: boolean = false) {
-    if (userPanel) userPanel.style.display = 'none'
+    if(!appElement) return
+
 
     let storedColors = {
         color: mainElement ? getComputedStyle(mainElement).color : undefined,
         bg: appElement ? getComputedStyle(appElement).backgroundColor : undefined,
         surface: mainElement ? getComputedStyle(mainElement).backgroundColor : undefined
     }
-
     if (removeBg) resetColors(true)
+    if (userPanel) userPanel.style.display = 'none'
 
-    domtoimage.toBlob(appElement).then((blob) => {
+    domtoimage.toBlob(appElement).then((blob: any) => {
         const fileName = `totem-${downloadIndex.get()}`
         saveAs?.(blob, `${fileName}.png`);
         downloadIndex.add()
@@ -110,7 +111,7 @@ function initUserPanel() {
     if(colorTotemButton) colorTotemButton.addEventListener('input', onChangeColor)
     if(colorBgButton) colorBgButton.addEventListener('input', onChangeBgColor)
     if(colorSurfaceButton) colorSurfaceButton.addEventListener('input', onChangeSurfaceColor)
-    if(resetColorButton) resetColorButton.addEventListener('click', resetColors)
+    if(resetColorButton) resetColorButton.addEventListener('click', () => resetColors())
     if(downloadButton) downloadButton.addEventListener('click', () => download())
     if(downloadPngButton) downloadPngButton.addEventListener('click', () => download(true))
 }
