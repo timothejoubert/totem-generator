@@ -9,21 +9,23 @@ Totem generator is a tool build for graphic designer. It's used to ...
 - Update 
 
 ## TODO
-### Create separate files forEach DOM logic
-- [ ] Global setting
-- [ ] Body part
-- [ ] Body settings
 
 ### Controls to add 
 - [ ] Body section Gap
 - [ ] Body img size
-- [ ] Individual body section controls (color, bg, shuffle)
+- [X] Individual body section controls (color, bg, shuffle)
 - [ ] Drag & drop order
 
 ### Code improvement
-- [ ] Create git repo
+- [X] Create git repo
 - [ ] Detect how many file length there is in `assets/svg/[bodyPart]` during runtime
 - [ ] Avoid to use `svg/index.ts` or auto generate the file
+- [ ] Create separate files forEach DOM logic
 
 ### Features
-- [ ] Add saveFile as png 
+- [X] Add saveFile as png 
+- [ ] Display all controls panel with a button or a keyDown
+- [ ] Manage image set (add, remove, select range...)
+
+### Design 
+- Improve individual section control

@@ -91,9 +91,14 @@
     align-items: center;
     gap: 22px;
     display: none;
+    cursor: initial;
 
     &.visible {
         display: flex;
+    }
+
+    & button, & label, & input {
+        cursor: pointer;
     }
 }
 
