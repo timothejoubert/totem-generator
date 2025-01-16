@@ -5,6 +5,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* user controls */
+  --color-global: #000;
+  --color-global-background: initial;
+  --color-global-background-surface: #f3f3f3;
+  --color-global-background-grid: #dddddd;
+
+  --color-head: initial;
+  --color-head-background: initial;
+
+  --color-body: initial;
+  --color-body-background: initial;
+
+  --color-leg: initial;
+  --color-leg-background: initial;
+
+  --color-foot: initial;
+  --color-foot-background: initial;
 }
 
 body {
@@ -17,4 +35,5 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: var(--color-global-background);
 }

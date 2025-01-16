@@ -10,14 +10,14 @@ const totemElements = totemSections.map(section => {
     const content = section.querySelector<HTMLDivElement>('.totem-section-content') || section
     const controls = section.querySelector<HTMLDivElement>('.totem-section-controls') || section
     const inputs = section.querySelectorAll('input') || [section]
-    const buttons = section.querySelectorAll('button') || [section]
+    const shuffleButton = section.querySelector('.shuffle') || section
 
     return {
         section,
         content,
         controls,
         inputs: [...inputs],
-        buttons: [...buttons],
+        shuffleButton,
         type: section.getAttribute('data-totem-section')
     }
 })
@@ -30,8 +30,12 @@ function shuffleAllTotemElement() {
     })
 }
 
-// Rename to bodySection, TotemSection and refactor DOM
-// Display current TotemSection controls
+function closeAllControls() {
+    totemElements.forEach(totem => {
+        totem.controls.classList.remove('visible')
+    })
+}
+
 function onTotemSectionClicked(event: Event, totem: TotemElement) {
     if (event.target !== totem.section) return
 
@@ -47,48 +51,12 @@ function insertRandomImg(totem: TotemElement) {
     insertImg(totem, getRandomIndex(TOTEM_IMG_LENGTH))
 }
 
-
-function onTotemInputChange(event: Event, totem: TotemElement) {
-    event.stopPropagation()
-    event.stopImmediatePropagation()
-
-    const inputEl = event.target as HTMLInputElement
-    const styleKey = inputEl?.getAttribute('data-input-style') || ''
-    if(styleKey) totem.section.style[styleKey as unknown as number] = inputEl.value
-}
-
-
-function resetColors() {
-    totemElements.forEach(totem => {
-        totem.section.style.backgroundColor = 'inherit';
-        totem.section.style.color = 'inherit';
-    })
-}
-
-function onTotemButtonClick(event: Event, totem: TotemElement) {
-    event.stopPropagation()
-    event.stopImmediatePropagation()
-
-    const buttonEl = event.target as HTMLInputElement
-    const action = buttonEl?.getAttribute('data-button-action') || ''
-
-    if(action === 'shuffle') insertRandomImg(totem)
-    else if(action === 'reset') resetColors()
-}
-
 function initTotemItems() {
     totemElements.forEach((totem) => {
         insertImg(totem, 0)
-        totem.section.addEventListener('click', (e) => onTotemSectionClicked(e, totem), { capture: true })
-
-        totem.buttons.forEach(input => {
-            input.addEventListener('click', (e) => onTotemButtonClick(e, totem))
-        })
-
-        totem.inputs.forEach(input => {
-            input.addEventListener('input', (e) => onTotemInputChange(e, totem))
-        })
+        totem.section.addEventListener('click', (e) => onTotemSectionClicked(e, totem), { capture: true });
+        totem.shuffleButton.addEventListener('click', () => insertRandomImg(totem))
     })
 }
 
-export { insertImg, insertRandomImg, shuffleAllTotemElement, initTotemItems, resetColors }
+export { insertImg, insertRandomImg, shuffleAllTotemElement, initTotemItems, closeAllControls }

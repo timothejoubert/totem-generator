@@ -21,17 +21,21 @@
           <div class="user-panel__body__section">
               <label for="global-totem-color">
                   <span>SVG color:</span>
-                <input type="color" value="#000" name="global-totem-color" id="global-totem-color">
+                <input type="color" value="#000" name="global-totem-color" id="global-totem-color" data-color-input="color-global">
               </label>
               <label for="global-bg-color">
                 Background:
-                <input type="color" value="#ffffff" name="global-bg-color" id="global-bg-color">
+                <input type="color" value="#ffffff" name="global-bg-color" id="global-bg-color" data-color-input="color-global-background">
               </label>
               <label for="global-surface-color">
                 Surface:
-                <input type="color" value="#f3f3f3" name="global-surface-color" id="global-surface-color">
+                <input type="color" value="#f3f3f3" name="global-surface-color" id="global-surface-color" data-color-input="color-global-background-surface">
               </label>
-                <button id="global-reset-color">Reset</button>
+              <label for="color-global-grid">
+                  Grid:
+                  <input type="color" value="#f3f3f3" name="color-global-grid" id="color-global-grid" data-color-input="color-global-background-grid">
+              </label>
+                <button id="global-reset-color" data-color-reset="global">Reset all</button>
           </div>
             <div class="user-panel__body__section">
             <button id="download">Save PNG</button>
@@ -46,13 +50,13 @@
               <div class="totem-section-controls">
                   <label for="totem-section-head-color">
                       Color:
-                    <input type="color" value="#000" name="totem-section-head-color" id="totem-section-head-color" data-input-style="color">
+                    <input type="color" name="totem-section-head-color" id="totem-section-head-color" data-color-input="color-head">
                   </label>
                   <label for="totem-section-head-bg-color">
                       Bg:
-                      <input type="color" value="#000" name="totem-section-head-bg-color" id="totem-section-head-bg-color" data-input-style="backgroundColor">
+                      <input type="color" name="totem-section-head-bg-color" id="totem-section-head-bg-color" data-color-input="color-head-background">
                   </label>
-                  <button class="reset" data-button-action="reset">Reset</button>
+                  <button class="reset" data-color-reset="color-head">Reset Color</button>
                   <button class="shuffle" data-button-action="shuffle">Shuffle</button>
               </div>
           </section>
@@ -61,13 +65,13 @@
               <div class="totem-section-controls">
                   <label for="totem-section-body-color">
                       Color:
-                      <input type="color" value="#000" name="totem-section-body-color" id="totem-section-body-color" data-input-style="color">
+                      <input type="color" value="#000" name="totem-section-body-color" id="totem-section-body-color" data-color-input="color-body">
                   </label>
                   <label for="totem-section-body-bg-color">
                       Bg:
-                      <input type="color" value="#000" name="totem-section-body-bg-color" id="totem-section-body-bg-color" data-input-style="backgroundColor">
+                      <input type="color" value="#000" name="totem-section-body-bg-color" id="totem-section-body-bg-color" data-color-input="color-body-background">
                   </label>
-                    <button class="reset" data-button-action="reset">Reset</button>
+                    <button class="reset" data-color-reset="color-body">Reset Color</button>
                   <button class="shuffle" data-button-action="shuffle">Shuffle</button>
               </div>
           </section>
@@ -76,13 +80,13 @@
               <div class="totem-section-controls">
                   <label for="totem-section-leg-color">
                       Color:
-                      <input type="color" value="#000" name="totem-section-leg-color" id="totem-section-leg-color" data-input-style="color">
+                      <input type="color" value="#000" name="totem-section-leg-color" id="totem-section-leg-color" data-color-input="color-leg">
                   </label>
                   <label for="totem-section-leg-bg-color">
                       Bg:
-                      <input type="color" value="#000" name="totem-section-leg-bg-color" id="totem-section-leg-bg-color" data-input-style="backgroundColor">
+                      <input type="color" value="#000" name="totem-section-leg-bg-color" id="totem-section-leg-bg-color" data-color-input="color-leg-background">
                   </label>
-                    <button class="reset" data-button-action="reset">Reset</button>
+                    <button class="reset" data-color-reset="color-leg">Reset Color</button>
                   <button class="shuffle" data-button-action="shuffle">Shuffle</button>
               </div>
           </section>
@@ -91,13 +95,13 @@
               <div class="totem-section-controls">
                   <label for="totem-section-foot-color">
                       Color:
-                      <input type="color" value="#000" name="totem-section-foot-color" id="totem-section-foot-color" data-input-style="color">
+                      <input type="color" value="#000" name="totem-section-foot-color" id="totem-section-foot-color" data-color-input="color-foot">
                   </label>
                   <label for="totem-section-foot-bg-color">
                       Bg:
-                      <input type="color" value="#000" name="totem-section-foot-bg-color" id="totem-section-foot-bg-color" data-input-style="backgroundColor">
+                      <input type="color" value="#000" name="totem-section-foot-bg-color" id="totem-section-foot-bg-color" data-color-input="color-foot-background">
                   </label>
-                    <button class="reset" data-button-action="reset">Reset</button>
+                    <button class="reset" data-color-reset="color-foot">Reset Color</button>
                   <button class="shuffle" data-button-action="shuffle">Shuffle</button>
               </div>
           </section>
