@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 208.8 181.82">
+    <ellipse class="cls-1" cx="38.32" cy="32.92" rx="38.32" ry="32.92" fill="currentColor"/>
+    <ellipse class="cls-1" cx="102.48" cy="32.92" rx="38.32" ry="32.92" fill="currentColor"/>
+    <ellipse class="cls-1" cx="170.48" cy="32.92" rx="38.32" ry="32.92" fill="currentColor"/>
+    <path class="cls-1" d="M208.8,38.67c0,79.06-46.74,143.14-104.4,143.14S0,117.73,0,38.67h208.8Z" fill="currentColor"/>
+</svg>
