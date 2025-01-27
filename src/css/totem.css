@@ -17,7 +17,7 @@
     position: relative;
     cursor: pointer;
     width: 100%;
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
 
     &:hover {
         border-color: #838383;
@@ -70,6 +70,7 @@
 
 .totem-section-content {
     pointer-events: none;
+    display: contents;
 }
 
 .totem-section-content svg,
