@@ -12,6 +12,7 @@ Totem generator is a tool build for graphic designer. It's used to ...
 
 ### Controls to add 
 - [ ] Body section Gap
+- [ ] Repeat body like a pattern 
 - [ ] Body img size
 - [X] Individual body section controls (color, bg, shuffle)
 - [ ] Drag & drop order

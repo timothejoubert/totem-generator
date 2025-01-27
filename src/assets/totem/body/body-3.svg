@@ -1,4 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 309.52 181.82">
-      <rect class="cls-1" x="128.25" y="108.83" width="49.12" height="96.21" transform="translate(309.75 4.13) rotate(90)" fill="currentColor"/>
-      <path class="cls-1" d="M309.52.32c0,85.1-68.99,154.1-154.1,154.1S1.33,85.43,1.33.32h308.19Z" fill="currentColor"/>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 307.84 181.61">
+      <path d="M307.84.32H0c0,67.26,43.14,124.43,103.26,145.38v35.59h96.1v-33.87c62.83-19.38,108.48-77.91,108.48-147.1Z" fill="currentColor"/>
 </svg>

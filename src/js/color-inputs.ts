@@ -66,4 +66,6 @@ function initColorInputs() {
     })
 }
 
+initColorInputs()
+
 export { initColorInputs, getCurrentCssVars, setCssVar }

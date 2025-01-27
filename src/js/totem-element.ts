@@ -18,7 +18,7 @@ const totemElements = totemSections.map(section => {
         controls,
         inputs: [...inputs],
         shuffleButton,
-        type: section.getAttribute('data-totem-section')
+        type: section.getAttribute('data-totem-section') || ''
     }
 })
 
@@ -44,11 +44,14 @@ function onTotemSectionClicked(event: Event, totem: TotemElement) {
 
 function insertImg(totem: TotemElement, index: number = 0) {
     const svgFileName = `${totem.type}${index.toString()}`
+    console.log('svgFileName', svgFileName)
     totem.content.innerHTML = (icons as Record<string, string>)[svgFileName]
 }
 
 function insertRandomImg(totem: TotemElement) {
-    insertImg(totem, getRandomIndex(TOTEM_IMG_LENGTH))
+    const length = Object.keys(icons).filter(key => key.includes(totem.type)).length
+
+    insertImg(totem, getRandomIndex(length))
 }
 
 function initTotemItems() {

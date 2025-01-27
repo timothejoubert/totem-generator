@@ -2,25 +2,63 @@ import body0 from './body/body-0.svg?raw'
 import body1 from './body/body-1.svg?raw'
 import body2 from './body/body-2.svg?raw'
 import body3 from './body/body-3.svg?raw'
+import body4 from './body/body-4.svg?raw'
+import body5 from './body/body-5.svg?raw'
+import body6 from './body/body-6.svg?raw'
+import body7 from './body/body-7.svg?raw'
+import body8 from './body/body-8.svg?raw'
+import body9 from './body/body-9.svg?raw'
+import body10 from './body/body-10.svg?raw'
 
 import foot0 from './foot/foot-0.svg?raw'
 import foot1 from './foot/foot-1.svg?raw'
 import foot2 from './foot/foot-2.svg?raw'
 import foot3 from './foot/foot-3.svg?raw'
-
-import leg0 from './leg/leg-0.svg?raw'
-import leg1 from './leg/leg-1.svg?raw'
-import leg2 from './leg/leg-2.svg?raw'
-import leg3 from './leg/leg-3.svg?raw'
+import foot4 from './foot/foot-4.svg?raw'
+import foot5 from './foot/foot-5.svg?raw'
+import foot6 from './foot/foot-6.svg?raw'
+import foot7 from './foot/foot-7.svg?raw'
+import foot8 from './foot/foot-8.svg?raw'
+import foot9 from './foot/foot-9.svg?raw'
+import foot10 from './foot/foot-10.svg?raw'
+import foot11 from './foot/foot-11.svg?raw'
+import foot12 from './foot/foot-12.svg?raw'
 
 import head0 from './head/head-0.svg?raw'
 import head1 from './head/head-1.svg?raw'
 import head2 from './head/head-2.svg?raw'
 import head3 from './head/head-3.svg?raw'
+import head4 from './head/head-4.svg?raw'
+import head5 from './head/head-5.svg?raw'
+import head6 from './head/head-6.svg?raw'
+import head7 from './head/head-7.svg?raw'
+import head8 from './head/head-8.svg?raw'
+import head9 from './head/head-9.svg?raw'
+import head10 from './head/head-10.svg?raw'
+import head11 from './head/head-11.svg?raw'
+import head12 from './head/head-12.svg?raw'
+import head13 from './head/head-13.svg?raw'
+
+import leg0 from './leg/leg-0.svg?raw'
+import leg1 from './leg/leg-1.svg?raw'
+import leg2 from './leg/leg-2.svg?raw'
+import leg3 from './leg/leg-3.svg?raw'
+import leg4 from './leg/leg-4.svg?raw'
+import leg5 from './leg/leg-5.svg?raw'
+import leg6 from './leg/leg-6.svg?raw'
+import leg7 from './leg/leg-7.svg?raw'
+import leg8 from './leg/leg-8.svg?raw'
+import leg9 from './leg/leg-9.svg?raw'
+import leg10 from './leg/leg-10.svg?raw'
+import leg11 from './leg/leg-11.svg?raw'
+import leg12 from './leg/leg-12.svg?raw'
+import leg13 from './leg/leg-13.svg?raw'
+import leg14 from './leg/leg-14.svg?raw'
+import leg15 from './leg/leg-15.svg?raw'
 
 export {
-    body0, body1, body2, body3,
-    foot0, foot1, foot2, foot3,
-    leg0, leg1, leg2, leg3,
-    head0, head1, head2, head3,
+    body0, body1, body2, body3, body4, body5, body6, body7, body8, body9, body10,
+    foot0, foot1, foot2, foot3, foot4, foot5, foot6, foot7, foot8, foot9, foot10, foot11, foot12,
+    head0, head1, head2, head3, head4, head5, head6, head7, head8, head9, head10, head11, head12, head13,
+    leg0, leg1, leg2, leg3, leg4, leg5, leg6, leg7, leg8, leg9, leg10, leg11, leg12, leg13, leg14, leg15,
 }
