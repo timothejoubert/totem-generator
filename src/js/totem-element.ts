@@ -2,8 +2,6 @@ import {getRandomIndex} from "./utils.ts";
 import * as icons from "../assets/totem/index.ts"
 
 // COMMONS
-const TOTEM_IMG_LENGTH = 4
-
 const totemSections = [...document.querySelectorAll<HTMLElement>('.totem-section')]
 
 const totemElements = totemSections.map(section => {
