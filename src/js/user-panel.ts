@@ -40,10 +40,9 @@ function saveScreenWithoutBg() {
 
     Object.entries(storedValue).forEach(([name, _value]) => {
         if(name.includes('background')) {
-            setCssVar(name, '')
+            setCssVar(name, 'initial')
         }
     })
-
 
     saveScreen(() => {
         Object.entries(storedValue).forEach(([name, value]) => {
